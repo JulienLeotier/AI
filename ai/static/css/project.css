@@ -59,35 +59,60 @@ nav a.sidenav-trigger {
 
 .shop-color {
     color: #FF0000 !important;
+    font-size: 35px;
+    font-family: 'reross' !important;
+    font-weight: bold;
+}
+
+.title-font {
+    font-size: 40px;
 }
 
 .left-menu {
-    margin-left: 10%;
+    margin-left: 35%;
     line-height: 20px !important;
+    font-family: 'reross' !important;
 }
 
 .culture-color {
     color: #2C2E71;
+    font-size: 35px;
 }
 
 #search {
     width: 85% !important;
 }
 
+.search-header {
+    list-style: none !important;
+}
+
+.input-search {
+    width: 75% !important;
+    border: none !important;
+    margin-top: 14% !important;
+}
+
 .icon-search {
     margin-top: 18px;
+}
+
+.icon-search-header {
+    margin-top: 18%;
 }
 
 .exposer-color {
     color: black;
     font-size: 24px !important;
     line-height: 10px;
+    font-family: 'reross' !important;
 }
 
 .adn-color {
     color: #FE9B04;
     font-size: 24px !important;
     line-height: 10px;
+    font-family: 'reross' !important;
 }
 
 input:not([type]):focus:not([readonly]),
@@ -127,7 +152,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 .sidenav {
-    width: 45% !important;
+    width: 35% !important;
 }
 
 .left-all-menu {
@@ -135,7 +160,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 .text-menu {
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .slider-icon-menu {
@@ -144,4 +169,77 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 .group-action {
     line-height: 10px !important;
+}
+
+.slider-plus-menu {
+    width: 30%;
+}
+
+.container-plus {
+    margin-top: 2%;
+}
+
+.no-margin {
+    margin: 2% !important;
+    font-family: 'reross' !important;
+}
+
+.social-icons-slider {
+    width: 15%;
+}
+
+.no-margin-zero {
+    margin: 0 !important;
+}
+
+.bottom {
+    position: relative;
+    margin-top: 10%;
+}
+
+.font-menu {
+    font-size: 25px;
+    font-family: 'reross' !important;
+}
+
+.font-reross {
+    font-family: 'reross' !important;
+}
+
+.Logo-slidder {
+    position: absolute;
+    width: 15%;
+    left: 42%;
+}
+
+.logo-header {
+    width: 30%;
+    margin-left: 8%;
+}
+
+.circle-border {
+    border: 1px dashed red !important;
+}
+
+.circle-text {
+    font-size: 14px;
+    text-align: center;
+    color: red;
+}
+
+.circle-insp {
+    border: 1px solid red !important;
+}
+
+.adn-mondrian {
+    position: absolute !important;
+    text-align: center;
+    left: 33%;
+    top: 15%;
+}
+
+.exposer-mondrian {
+    position: absolute !important;
+    top: 52%;
+    left: 33%;
 }

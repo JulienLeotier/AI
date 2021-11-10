@@ -1,1 +1,700 @@
 {% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link href="{% static 'css/nicepage.css' %}" rel="stylesheet">
+<link href="{% static 'css/Accueil.css' %}" rel="stylesheet">
+<section class="u-align-center u-clearfix u-white u-section-1" id="sec-a22f">
+  <div id="carousel-5989" data-u-ride="carousel" class="u-carousel u-expanded-width u-slider u-slider-1">
+    <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+      <li data-u-target="#carousel-5989"
+        class="u-active u-active-grey-90 u-border-2 u-border-active-black u-border-grey-90 u-shape-circle u-white"
+        data-u-slide-to="0" style="width: 14px; height: 14px; background-image: none;"></li>
+      <li data-u-target="#carousel-5989"
+        class="u-active-grey-90 u-border-2 u-border-active-black u-border-grey-90 u-shape-circle u-white"
+        data-u-slide-to="1" style="width: 14px; height: 14px; background-image: none;"></li>
+      <li data-u-target="#carousel-5989" class="u-border-2 u-border-grey-75 u-shape-circle" data-u-slide-to="2"
+        style="width: 14px; height: 14px;"></li>
+    </ol>
+    <div class="u-carousel-inner" role="listbox">
+      <div class="u-active u-align-center u-carousel-item u-container-style u-slide">
+        <div class="u-container-layout u-container-layout-1">
+          <div class="u-custom-color-4 u-shape u-shape-rectangle u-shape-1"></div>
+          <p class="u-align-center u-large-text u-text u-text-variant u-text-1 title-font">Inscrivez-vous à notre
+            newsletter !</p>
+        </div>
+      </div>
+      <div class="u-align-center u-carousel-item u-container-style u-slide">
+        <div class="u-container-layout u-container-layout-2">
+          <div class="u-custom-color-1 u-shape u-shape-rectangle u-shape-2"></div>
+          <p class="u-align-center u-large-text u-text u-text-variant u-text-2 title-font">15 € offerts sur votre
+            premier achat
+          </p>
+        </div>
+      </div>
+      {% comment %} <div class="u-carousel-item u-container-style u-slide u-carousel-item-3">
+        <div class="u-container-layout u-valign-bottom-xl u-container-layout-3">
+          <div class="u-custom-color-5 u-shape u-shape-rectangle u-shape-3"></div>
+          <p class="u-align-center u-large-text u-text u-text-default u-text-variant u-text-3 title-font">Paiement
+            sécurisé,&nbsp;<br>retour gratuit * (Voir CGU)
+          </p>
+        </div>
+      </div> {% endcomment %}
+    </div>
+    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-hidden u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-icon-rectangle u-text-white u-carousel-control-1"
+      href="#carousel-5989" role="button" data-u-slide="prev">
+      <span aria-hidden="true">
+        <svg viewBox="0 0 451.847 451.847">
+          <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+        </svg>
+      </span>
+      <span class="sr-only">
+        <svg viewBox="0 0 451.847 451.847">
+          <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+        </svg>
+      </span>
+    </a>
+    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-hidden u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-icon-rectangle u-text-white u-carousel-control-1"
+      href="#carousel-5989" role="button" data-u-slide="next">
+      <span aria-hidden="true">
+        <svg viewBox="0 0 451.846 451.847">
+          <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+        </svg>
+      </span>
+      <span class="sr-only">
+        <svg viewBox="0 0 451.846 451.847">
+          <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+        </svg>
+      </span>
+    </a>
+  </div>
+</section>
+  <section class="u-clearfix u-section-2" id="sec-013f">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-custom-color-1 u-shape u-shape-rectangle u-shape-1"></div>
+      <div class="u-custom-color-2 u-shape u-shape-rectangle u-shape-2"></div>
+      <div class="u-border-6 u-border-black u-line u-line-vertical u-line-1"></div>
+      <div class="u-border-6 u-border-black u-line u-line-vertical u-line-2"></div>
+      <div class="u-border-6 u-border-black u-line u-line-vertical u-line-3"></div>
+      <div class="u-border-6 u-border-black u-line u-line-vertical u-line-4"></div>
+      <div class="u-border-6 u-border-black u-line u-line-vertical u-line-5"></div>
+      <div class="u-border-6 u-border-black u-line u-line-vertical u-line-6"></div>
+      <h1 class="u-text u-text-default u-text-1 font-reross"> Ma plateforme d'art en ligne</h1>
+      <h5
+        class="u-align-center-xs u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-2 font-reross">
+        Découvrir, acheter et collectionner de l'art</h5>
+      <div class="u-custom-color-3 u-shape u-shape-rectangle u-shape-3"></div>
+      <div class="u-black u-shape u-shape-rectangle u-shape-4">
+              <p class="u-text u-text-custom-color-4 u-text-default u-text-6 adn-mondrian">adn</p>
+      </div>
+      <div class="u-border-6 u-border-black u-line u-line-horizontal u-line-7"></div>
+      <div class="u-border-6 u-border-black u-line u-line-horizontal u-line-8"></div>
+      <div class="u-border-6 u-border-black u-line u-line-horizontal u-line-9"></div>
+      <div class="u-border-6 u-border-black u-line u-line-horizontal u-line-10"></div>
+      <div class="u-border-6 u-border-black u-expanded-width-lg u-line u-line-horizontal u-line-11"></div>
+      <div class="u-border-6 u-border-black u-line u-line-horizontal u-line-12"></div>
+      <div class="u-border-6 u-border-black u-hidden-xs u-line u-line-horizontal u-line-13"></div>
+      <div class="u-border-3 u-border-palette-2-base u-hidden-sm u-hidden-xs u-shape u-shape-circle u-shape-5 circle-insp">
+            <p class='font-reross circle-text'>Manque d’inspiration ?</p>
+      </div>
+      <div class="u-border-3 u-border-palette-2-base u-hidden-sm u-hidden-xs u-shape u-shape-circle u-shape-6 circle-border">
+      <p class='font-reross circle-text'>Pour les Entreprises</p>
+      </div>
+      <span class="u-text u-text-default u-text-3"> Art</span>
+      <p class="u-text u-text-default u-text-white u-text-4 font-reross"> SHOP</p>
+      <p class="u-text u-text-default u-text-white u-text-5"> CULTURE</p>
+      <a href="#"
+        class="u-border-2 u-border-hover-white u-border-white u-btn u-button-style u-none u-radius-0 u-text-hover-white u-text-white u-btn-1">Découvrir</a>
+      <a href="#"
+        class="u-border-2 u-border-hover-white u-border-white u-btn u-button-style u-none u-radius-0 u-text-hover-white u-text-white u-btn-2">Découvrir</a>
+        <p class="u-text u-text-default u-text-7 exposer-mondrian">exposer</p>
+    </div>
+  </section>
+    <section class="u-clearfix u-section-3" id="sec-17da">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h6 class="u-text u-text-default u-text-1">NOUVEAUTÉS </h6>
+        <a href="https://nicepage.app" class="u-border-1 u-border-black u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-none u-radius-3 u-text-body-color u-text-hover-black u-btn-1">Trier par&nbsp;<span class="u-icon u-text-white u-icon-1"><svg class="u-svg-content" viewBox="0 0 490.677 490.677" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M489.272,37.339c-1.92-3.307-5.44-5.333-9.259-5.333H10.68c-3.819,0-7.339,2.027-9.259,5.333    c-1.899,3.307-1.899,7.36,0.021,10.667l234.667,405.333c1.899,3.307,5.419,5.333,9.237,5.333s7.339-2.027,9.237-5.333 L489.251,48.005C491.149,44.72,491.149,40.645,489.272,37.339z"></path></svg><img></span>
+        </a>
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1280" data-image-height="853" src="images/6b264479f1df07aac85b98d3ef26d88a00d90c13abf7be814b482081c840528e74080b3c6740ec35f9beaf4c5a01b80eace1fee5e6a20efd183162_1280.jpg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-41c6"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-41c6"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-1">
+                  <div class="u-container-layout u-container-layout-2">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-2">230 vues</a>
+                    <h3 class="u-text u-text-2">Sophie</h3>
+                    <p class="u-align-right u-text u-text-3"> 3000 €</p>
+                    <p class="u-text u-text-4"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-5"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-3">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-4"> Sculpteur</a>
+                    <p class="u-text u-text-6"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-7"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5620"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-5620" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-5">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-09ff"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-09ff"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-2">
+                  <div class="u-container-layout u-container-layout-4">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-6">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-8">Sophie</h3>
+                    <p class="u-align-right u-text u-text-9"> 3000 €</p>
+                    <p class="u-text u-text-10"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-11"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-7">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-8"> Sculpteur</a>
+                    <p class="u-text u-text-12"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-13"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-53cc"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-53cc" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-9">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1794"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-1794"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-3">
+                  <div class="u-container-layout u-container-layout-6">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-10">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-14">Sophie</h3>
+                    <p class="u-align-right u-text u-text-15"> 3000 €</p>
+                    <p class="u-text u-text-16"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-17"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-11">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-12"> Sculpteur</a>
+                    <p class="u-text u-text-18"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-19"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-7"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3184"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-3184" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-13">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-c208">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-absolute-hcenter-md u-absolute-hcenter-sm u-absolute-hcenter-xs u-border-5 u-border-black u-line u-line-vertical u-line-1"></div>
+        <h5 class="u-text u-text-1"> CULTURE - ARTICLES SUR L’ART </h5>
+        <div class="u-border-6 u-border-black u-image u-image-circle u-image-1" alt="" data-image-width="1500" data-image-height="1000"></div>
+        <div class="u-border-5 u-border-black u-hidden-md u-hidden-sm u-hidden-xs u-line u-line-horizontal u-line-2"></div><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e17e"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-e17e"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+        <p class="u-text u-text-2"> + Suivre l'artiste<span style="font-weight: 700;"></span>
+        </p>
+        <h6 class="u-text u-text-3"> Takashi MURAKAMI</h6>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top-md u-valign-top-sm u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="2000" data-image-height="1333" src="images/3.svg">
+                <h3 class="u-text u-text-default u-text-4">Sample Headline</h3>
+                <p class="u-text u-text-5">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1">En savoir +</a>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top-md u-valign-top-sm u-container-layout-2">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="2000" data-image-height="1333" src="images/3.svg">
+                <h3 class="u-text u-text-default u-text-6">Sample Headline</h3>
+                <p class="u-text u-text-7">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2"> En savoir +</a>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top-md u-valign-top-sm u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-4" data-image-width="2000" data-image-height="1333" src="images/3.svg">
+                <h3 class="u-text u-text-default u-text-8">Sample Headline</h3>
+                <p class="u-text u-text-9">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-3">En savoir +<br>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="carousel_b24e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h6 class="u-text u-text-default u-text-1">PEINTURES</h6>
+        <a href="https://nicepage.app" class="u-border-1 u-border-black u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-none u-radius-3 u-text-body-color u-text-hover-black u-btn-1">Trier par&nbsp;<span class="u-icon u-text-white u-icon-1"><svg class="u-svg-content" viewBox="0 0 490.677 490.677" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M489.272,37.339c-1.92-3.307-5.44-5.333-9.259-5.333H10.68c-3.819,0-7.339,2.027-9.259,5.333    c-1.899,3.307-1.899,7.36,0.021,10.667l234.667,405.333c1.899,3.307,5.419,5.333,9.237,5.333s7.339-2.027,9.237-5.333 L489.251,48.005C491.149,44.72,491.149,40.645,489.272,37.339z"></path></svg><img></span>
+        </a>
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1280" data-image-height="853" src="https://pixabay.com/get/g571729f1486b264479f1df07aac85b98d3ef26d88a00d90c13abf7be814b482081c840528e74080b3c6740ec35f9beaf4c5a01b80eace1fee5e6a20efd183162_1280.jpg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-41c6"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-41c6"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-1">
+                  <div class="u-container-layout u-container-layout-2">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-2">230 vues</a>
+                    <h3 class="u-text u-text-2">Sophie</h3>
+                    <p class="u-align-right u-text u-text-3"> 3000 €</p>
+                    <p class="u-text u-text-4"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-5"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-3">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-4"> Sculpteur</a>
+                    <p class="u-text u-text-6"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-7"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5620"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-5620" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-5">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-09ff"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-09ff"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-2">
+                  <div class="u-container-layout u-container-layout-4">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-6">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-8">Sophie</h3>
+                    <p class="u-align-right u-text u-text-9"> 3000 €</p>
+                    <p class="u-text u-text-10"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-11"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-7">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-8"> Sculpteur</a>
+                    <p class="u-text u-text-12"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-13"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-53cc"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-53cc" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-9">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1794"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-1794"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-3">
+                  <div class="u-container-layout u-container-layout-6">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-10">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-14">Sophie</h3>
+                    <p class="u-align-right u-text u-text-15"> 3000 €</p>
+                    <p class="u-text u-text-16"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-17"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-11">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-12"> Sculpteur</a>
+                    <p class="u-text u-text-18"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-19"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-7"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3184"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-3184" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-13">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-6" id="carousel_c61c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h6 class="u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1">ÉVÈNEMENTS &amp; SPECTACLES</h6>
+        <a href="https://nicepage.app" class="u-border-1 u-border-black u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-none u-radius-3 u-text-body-color u-text-hover-black u-btn-1">Trier par&nbsp;<span class="u-icon u-text-white u-icon-1"><svg class="u-svg-content" viewBox="0 0 490.677 490.677" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M489.272,37.339c-1.92-3.307-5.44-5.333-9.259-5.333H10.68c-3.819,0-7.339,2.027-9.259,5.333    c-1.899,3.307-1.899,7.36,0.021,10.667l234.667,405.333c1.899,3.307,5.419,5.333,9.237,5.333s7.339-2.027,9.237-5.333 L489.251,48.005C491.149,44.72,491.149,40.645,489.272,37.339z"></path></svg><img></span>
+        </a>
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1280" data-image-height="853" src="https://pixabay.com/get/g571729f1486b264479f1df07aac85b98d3ef26d88a00d90c13abf7be814b482081c840528e74080b3c6740ec35f9beaf4c5a01b80eace1fee5e6a20efd183162_1280.jpg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-41c6"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-41c6"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-1">
+                  <div class="u-container-layout u-container-layout-2">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-2">230 vues</a>
+                    <h3 class="u-text u-text-2">Sophie</h3>
+                    <p class="u-align-right u-text u-text-3"> 3000 €</p>
+                    <p class="u-text u-text-4"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-5"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-3">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-4"> Sculpteur</a>
+                    <p class="u-text u-text-6"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-7"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5620"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-5620" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-5">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-09ff"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-09ff"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-2">
+                  <div class="u-container-layout u-container-layout-4">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-6">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-8">Sophie</h3>
+                    <p class="u-align-right u-text u-text-9"> 3000 €</p>
+                    <p class="u-text u-text-10"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-11"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-7">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-8"> Sculpteur</a>
+                    <p class="u-text u-text-12"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-13"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-53cc"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-53cc" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-9">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1794"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-1794"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-3">
+                  <div class="u-container-layout u-container-layout-6">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-10">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-14">Sophie</h3>
+                    <p class="u-align-right u-text u-text-15"> 3000 €</p>
+                    <p class="u-text u-text-16"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-17"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-11">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-12"> Sculpteur</a>
+                    <p class="u-text u-text-18"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-19"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-7"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3184"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-3184" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-13">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-7" id="carousel_2c2a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h6 class="u-text u-text-default u-text-1">SCULPTURES</h6>
+        <a href="https://nicepage.app" class="u-border-1 u-border-black u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-none u-radius-3 u-text-body-color u-text-hover-black u-btn-1">Trier par&nbsp;<span class="u-icon u-text-white u-icon-1"><svg class="u-svg-content" viewBox="0 0 490.677 490.677" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M489.272,37.339c-1.92-3.307-5.44-5.333-9.259-5.333H10.68c-3.819,0-7.339,2.027-9.259,5.333    c-1.899,3.307-1.899,7.36,0.021,10.667l234.667,405.333c1.899,3.307,5.419,5.333,9.237,5.333s7.339-2.027,9.237-5.333 L489.251,48.005C491.149,44.72,491.149,40.645,489.272,37.339z"></path></svg><img></span>
+        </a>
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1280" data-image-height="853" src="https://pixabay.com/get/g571729f1486b264479f1df07aac85b98d3ef26d88a00d90c13abf7be814b482081c840528e74080b3c6740ec35f9beaf4c5a01b80eace1fee5e6a20efd183162_1280.jpg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-41c6"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-41c6"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-1">
+                  <div class="u-container-layout u-container-layout-2">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-2">230 vues</a>
+                    <h3 class="u-text u-text-2">Sophie</h3>
+                    <p class="u-align-right u-text u-text-3"> 3000 €</p>
+                    <p class="u-text u-text-4"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-5"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-3">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-4"> Sculpteur</a>
+                    <p class="u-text u-text-6"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-7"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5620"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-5620" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-5">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-09ff"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-09ff"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-2">
+                  <div class="u-container-layout u-container-layout-4">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-6">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-8">Sophie</h3>
+                    <p class="u-align-right u-text u-text-9"> 3000 €</p>
+                    <p class="u-text u-text-10"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-11"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-7">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-8"> Sculpteur</a>
+                    <p class="u-text u-text-12"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-13"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-53cc"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-53cc" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-9">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1794"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-1794"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-3">
+                  <div class="u-container-layout u-container-layout-6">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-10">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-14">Sophie</h3>
+                    <p class="u-align-right u-text u-text-15"> 3000 €</p>
+                    <p class="u-text u-text-16"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-17"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-11">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-12"> Sculpteur</a>
+                    <p class="u-text u-text-18"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-19"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-7"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3184"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-3184" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-13">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-8" id="carousel_004a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h6 class="u-text u-text-default-lg u-text-default-md u-text-default-xl u-text-1">PHOTOGRAPHIES</h6>
+        <a href="https://nicepage.app" class="u-border-1 u-border-black u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-none u-radius-3 u-text-body-color u-text-hover-black u-btn-1">Trier par&nbsp;<span class="u-icon u-text-white u-icon-1"><svg class="u-svg-content" viewBox="0 0 490.677 490.677" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M489.272,37.339c-1.92-3.307-5.44-5.333-9.259-5.333H10.68c-3.819,0-7.339,2.027-9.259,5.333    c-1.899,3.307-1.899,7.36,0.021,10.667l234.667,405.333c1.899,3.307,5.419,5.333,9.237,5.333s7.339-2.027,9.237-5.333 L489.251,48.005C491.149,44.72,491.149,40.645,489.272,37.339z"></path></svg><img></span>
+        </a>
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1280" data-image-height="853" src="https://pixabay.com/get/g571729f1486b264479f1df07aac85b98d3ef26d88a00d90c13abf7be814b482081c840528e74080b3c6740ec35f9beaf4c5a01b80eace1fee5e6a20efd183162_1280.jpg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-41c6"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-41c6"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-1">
+                  <div class="u-container-layout u-container-layout-2">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-2">230 vues</a>
+                    <h3 class="u-text u-text-2">Sophie</h3>
+                    <p class="u-align-right u-text u-text-3"> 3000 €</p>
+                    <p class="u-text u-text-4"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-5"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-3">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-4"> Sculpteur</a>
+                    <p class="u-text u-text-6"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-7"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5620"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-5620" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-5">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-09ff"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-09ff"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-2">
+                  <div class="u-container-layout u-container-layout-4">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-6">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-8">Sophie</h3>
+                    <p class="u-align-right u-text u-text-9"> 3000 €</p>
+                    <p class="u-text u-text-10"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-11"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-7">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-8"> Sculpteur</a>
+                    <p class="u-text u-text-12"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-13"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-53cc"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-53cc" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-9">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1794"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-1794"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-3">
+                  <div class="u-container-layout u-container-layout-6">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-10">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-14">Sophie</h3>
+                    <p class="u-align-right u-text u-text-15"> 3000 €</p>
+                    <p class="u-text u-text-16"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-17"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-11">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-12"> Sculpteur</a>
+                    <p class="u-text u-text-18"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-19"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-7"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3184"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-3184" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-13">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-9" id="carousel_3e1f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h6 class="u-text u-text-default u-text-1">DESSINS</h6>
+        <a href="https://nicepage.app" class="u-border-1 u-border-black u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-none u-radius-3 u-text-body-color u-text-hover-black u-btn-1">Trier par&nbsp;<span class="u-icon u-text-white u-icon-1"><svg class="u-svg-content" viewBox="0 0 490.677 490.677" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M489.272,37.339c-1.92-3.307-5.44-5.333-9.259-5.333H10.68c-3.819,0-7.339,2.027-9.259,5.333    c-1.899,3.307-1.899,7.36,0.021,10.667l234.667,405.333c1.899,3.307,5.419,5.333,9.237,5.333s7.339-2.027,9.237-5.333 L489.251,48.005C491.149,44.72,491.149,40.645,489.272,37.339z"></path></svg><img></span>
+        </a>
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1280" data-image-height="853" src="https://pixabay.com/get/g571729f1486b264479f1df07aac85b98d3ef26d88a00d90c13abf7be814b482081c840528e74080b3c6740ec35f9beaf4c5a01b80eace1fee5e6a20efd183162_1280.jpg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-41c6"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-41c6"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-1">
+                  <div class="u-container-layout u-container-layout-2">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-2">230 vues</a>
+                    <h3 class="u-text u-text-2">Sophie</h3>
+                    <p class="u-align-right u-text u-text-3"> 3000 €</p>
+                    <p class="u-text u-text-4"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-5"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-3">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-4"> Sculpteur</a>
+                    <p class="u-text u-text-6"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-7"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5620"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-5620" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-5">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-09ff"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-09ff"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-2">
+                  <div class="u-container-layout u-container-layout-4">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-6">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-8">Sophie</h3>
+                    <p class="u-align-right u-text u-text-9"> 3000 €</p>
+                    <p class="u-text u-text-10"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-11"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-7">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-8"> Sculpteur</a>
+                    <p class="u-text u-text-12"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-13"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-53cc"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-53cc" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-9">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="2000" data-image-height="1333" src="images/3.svg"><span class="u-icon u-icon-circle u-spacing-6 u-text-black u-white u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -28 512.001 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1794"></use></svg><svg class="u-svg-content" viewBox="0 -28 512.001 512" id="svg-1794"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg></span>
+                <div class="u-container-style u-expanded-width u-group u-group-3">
+                  <div class="u-container-layout u-container-layout-6">
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-75 u-btn u-button-style u-custom-color-5 u-btn-10">230 vues</a>
+                    <h3 class="u-text u-text-default u-text-14">Sophie</h3>
+                    <p class="u-align-right u-text u-text-15"> 3000 €</p>
+                    <p class="u-text u-text-16"> Acrylique sur toile,<span class="u-text-grey-50">140x157 cm </span>
+                    </p>
+                    <p class="u-text u-text-17"> Emmanuelle MARTIN</p>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-11">pEINTRE</a>
+                    <a href="https://nicepage.cloud" class="u-border-1 u-border-grey-90 u-btn u-button-style u-custom-color-5 u-btn-12"> Sculpteur</a>
+                    <p class="u-text u-text-18"> Gironde, FRANCE</p>
+                    <p class="u-text u-text-19"> + Suivre l'artiste</p><span class="u-icon u-icon-circle u-text-black u-icon-7"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 54.757 54.757" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3184"></use></svg><svg class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px" id="svg-3184" style="enable-background:new 0 0 54.757 54.757;"><g><path d="M27.557,12c-3.859,0-7,3.141-7,7s3.141,7,7,7s7-3.141,7-7S31.416,12,27.557,12z M27.557,24c-2.757,0-5-2.243-5-5
+		s2.243-5,5-5s5,2.243,5,5S30.314,24,27.557,24z"></path><path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+		L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M41.099,31.431L27.38,51.243L13.639,31.4
+		C8.44,24.468,9.185,13.08,15.235,7.031C18.479,3.787,22.792,2,27.38,2s8.901,1.787,12.146,5.031
+		C45.576,13.08,46.321,24.468,41.099,31.431z"></path>
+</g></svg></span>
+                    <a href="" class="u-active-none u-border-1 u-border-grey-90 u-border-hover-palette-2-base u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-13">En <span style="font-weight: 700;">savoir</span> +
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-10" id="sec-0ef3">
+      <div class="u-clearfix u-sheet u-valign-bottom-sm u-valign-bottom-xs u-valign-middle-md u-sheet-1"><span class="u-border-2 u-border-black u-hidden-sm u-hidden-xs u-icon u-icon-circle u-spacing-8 u-text-black u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 510 510" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-99af"></use></svg><svg class="u-svg-content" viewBox="0 0 510 510" id="svg-99af"><g id="XMLID_737_"><path id="XMLID_739_" d="m255 0c-82.71 0-150 67.289-150 150v15h90v-15c0-33.084 26.916-60 60-60s60 26.916 60 60-26.916 60-60 60h-45v180h90v-96.884c62.397-19.671 105-77.57 105-143.116 0-82.711-67.29-150-150-150z"></path><path id="XMLID_738_" d="m210 420h90v90h-90z"></path>
+</g></svg></span>
+        <div class="u-rotation-parent u-rotation-parent-1"><span class="u-border-1 u-border-black u-hidden-sm u-hidden-xs u-icon u-icon-circle u-rotate-270 u-spacing-11 u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-970e"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-970e" style="enable-background:new 0 0 512 512;"><g><g><path d="M508.875,248.458l-160-160c-4.167-4.167-10.917-4.167-15.083,0c-4.167,4.167-4.167,10.917,0,15.083l141.792,141.792    H10.667C4.771,245.333,0,250.104,0,256s4.771,10.667,10.667,10.667h464.917L333.792,408.458c-4.167,4.167-4.167,10.917,0,15.083    c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l160-160C513.042,259.375,513.042,252.625,508.875,248.458z    "></path>
+</g>
+</g></svg></span>
+{% endblock content %}

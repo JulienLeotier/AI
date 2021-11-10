@@ -27,10 +27,17 @@
   <!-- Your stuff: Third-party CSS libraries go here -->
   <!-- This file stores project-specific CSS -->
   <link href="{% static 'css/project.css' %}" rel="stylesheet">
+
+
   <style>
     @font-face {
       font-family: "simssunb" !important;
       src: url({% static 'fonts/simsunb.ttf' %}) format("ttf"),
+    }
+
+    @font-face {
+      font-family: "reross" !important;
+      src: url({% static 'fonts/reross.ttf' %}) format("ttf"),
     }
 
   </style>
@@ -53,6 +60,7 @@
 
   <!-- place project specific Javascript in this file -->
   <script defer src="{% static 'js/project.js' %}"></script>
+  <script defer src="{% static 'js/nicepage.js' %}"></script>
 
   {% endblock javascript %}
 
@@ -83,13 +91,13 @@
               class="bag-icon" /></a></li>
         <li><a href="sass.html" class="black-text"><img src="{% static 'images/Mon_Compte@2x.png' %}"
               class="user-icon" /></a></li>
-
       </ul>
     </div>
   </nav>
   <ul id="slide-out" class="sidenav">
+    <img src="{% static 'images/menu/favicon.png' %}" alt="" class="Logo-slidder">
     <div class="col s12 text-menu">
-      <p>MENU</p>
+      <p class="font-menu">MENU</p>
     </div>
     <div class="row left-all-menu">
 
@@ -101,7 +109,7 @@
         </li>
       </div>
       <div class="col s12">
-        <h5>ART <b class="shop-color">SHOP</b></h5>
+        <h5 class="title-font">ART <span class="shop-color">SHOP</span></h5>
       </div>
       <div class="col s12">
         <ul>
@@ -129,34 +137,97 @@
         <p class="adn-color"><b>adn</b></p>
       </div>
       <div class="col s12 group-action">
-        <p><img src="{% static 'images/menu/user.png' %}" class="slider-icon-menu"/> S’inscrire / Se connecter </b></p>
-        <p><img src="{% static 'images/menu/plus_1_b.png' %}" class="slider-icon-menu"/> Mes artistes favoris</b></p>
-        <p><img src="{% static 'images/menu/heart_2_jx@2x.png' %}" class="slider-icon-menu"/> Mes coups de coeur</b></p>
-        <p><img src="{% static 'images/menu/letter_hf@2x.png' %}" class="slider-icon-menu"/> Contactez-nous</b></p>
-        <p><img src="{% static 'images/menu/briefcase_a@2x.png' %}" class="slider-icon-menu"/> Entreprises</b></p>
-        <p><img src="{% static 'images/menu/n_02-globe@2x.png' %}" class="slider-icon-menu"/> FRANÇAIS</b></p>
-        <p><img src="{% static 'images/euro_byu.png' %}" class="slider-icon-menu"/> EUROS</b></p>
-
+        <div class="row">
+          <div class="col s10">
+            <p class="no-margin"><img src="{% static 'images/menu/user.png' %}" class="slider-icon-menu" /> S’inscrire /
+              Se connecter </b>
+            </p>
+          </div>
+          <div class="col s2 container-plus">
+            <img src="{% static 'images/menu/n_03-next-1_@2x.png' %}" class="slider-plus-menu" />
+          </div>
+          <div class="col s10">
+            <p class="no-margin"><img src="{% static 'images/menu/plus_1_b.png' %}" class="slider-icon-menu" /> Mes
+              artistes favoris</b>
+            </p>
+          </div>
+          <div class="col s2 container-plus">
+            <img src="{% static 'images/menu/n_03-next-1_@2x.png' %}" class="slider-plus-menu" />
+          </div>
+          <div class="col s10">
+            <p class="no-margin"><img src="{% static 'images/menu/heart_2_jx@2x.png' %}" class="slider-icon-menu" /> Mes
+              coups de
+              coeur</b>
+            </p>
+          </div>
+          <div class="col s2 container-plus">
+            <img src="{% static 'images/menu/n_03-next-1_@2x.png' %}" class="slider-plus-menu" />
+          </div>
+          <div class="col s10">
+            <p class="no-margin"><img src="{% static 'images/menu/letter_hf@2x.png' %}" class="slider-icon-menu" />
+              Contactez-nous</b></p>
+          </div>
+          <div class="col s2 container-plus">
+            <img src="{% static 'images/menu/n_03-next-1_@2x.png' %}" class="slider-plus-menu" />
+          </div>
+          <div class="col s10">
+            <p class="no-margin"><img src="{% static 'images/menu/briefcase_a@2x.png' %}" class="slider-icon-menu" />
+              Entreprises</b></p>
+          </div>
+          <div class="col s2 container-plus">
+            <img src="{% static 'images/menu/n_03-next-1_@2x.png' %}" class="slider-plus-menu" />
+          </div>
+          <div class="col s10">
+            <p class="no-margin"><img src="{% static 'images/menu/n_02-globe@2x.png' %}" class="slider-icon-menu" />
+              Français</b></p>
+          </div>
+          <div class="col s2 container-plus">
+            <img src="{% static 'images/menu/n_03-next-1_@2x.png' %}" class="slider-plus-menu" />
+          </div>
+          <div class="col s10">
+            <p class="no-margin"><img src="{% static 'images/euro_byu.png' %}" class="slider-icon-menu" /> Euros</b></p>
+          </div>
+          <div class="col s2 container-plus">
+            <img src="{% static 'images/menu/n_03-next-1_@2x.png' %}" class="slider-plus-menu" />
+          </div>
+        </div>
       </div>
+      <div class="col s12 bottom">
+        <div class="row no-margin-zero">
+          <div class="col s8">
+            <p class="no-margin-zero">SUIVRE ART INTERACTIVITIES</p>
+          </div>
+          <div class="col s4">
+            <img src="{% static 'images/menu/facebook@2x.png' %}" class="social-icons-slider" />
+            <img src="{% static 'images/menu/twitter@2x.png' %}" class="social-icons-slider" />
+            <img src="{% static 'images/menu/instagram_s@2x.png' %}" class="social-icons-slider" />
+            <img src="{% static 'images/menu/pinterest@2x.png' %}" class="social-icons-slider" />
 
+          </div>
+        </div>
+      </div>
     </div>
   </ul>
 
+  <div class="row no-margin-zero">
+    <div class="col s10">
+      <img src="{% static 'images/Test_logo_Plan_de_travail_1.png' %}" alt="" class="logo-header">
+    </div>
+    <div class="col s2">
+      <li class="search search-header">
+        <div>
+          <input class="input-search" placeholder="Recherche"><i
+            class="material-icons right icon-search-header">search</i>
+        </div>
+      </li>
+    </div>
+  </div>
+  <div class="divider"></div>
 
-  <div class="container">
-
-    {% if messages %}
-    {% for message in messages %}
-    <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">{{ message }}<button type="button"
-        class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
-    {% endfor %}
-    {% endif %}
 
     {% block content %}
-    <p>Use this document as a way to quick start any new project.</p>
+    <p class="no-margin">Use this document as a way to quick start any new project.</p>
     {% endblock content %}
-
-  </div> <!-- /container -->
 
   {% block modal %}{% endblock modal %}
 
