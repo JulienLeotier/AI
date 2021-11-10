@@ -1,13 +1,147 @@
 /* These styles are generated from project.scss. */
 
+body {
+    font-family: "simssunb" !important;
+}
+
+.container-perso {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
 .alert-debug {
-  color: black;
-  background-color: white;
-  border-color: #d6e9c6;
+    color: black;
+    background-color: white;
+    border-color: #d6e9c6;
 }
 
 .alert-error {
-  color: #b94a48;
-  background-color: #f2dede;
-  border-color: #eed3d7;
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
+.menu-icon {
+    width: 20%;
+}
+
+.letter-icon {
+    width: 10%;
+    vertical-align: text-bottom;
+}
+
+.card-icon {
+    width: 57%;
+    float: right;
+    margin-top: 30%;
+}
+
+.heart-icon {
+    vertical-align: middle;
+}
+
+.bag-icon {
+    vertical-align: middle;
+    width: 70%;
+}
+
+.user-icon {
+    vertical-align: middle;
+    width: 30%;
+}
+
+nav a.sidenav-trigger {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.shop-color {
+    color: #FF0000 !important;
+}
+
+.left-menu {
+    margin-left: 10%;
+    line-height: 20px !important;
+}
+
+.culture-color {
+    color: #2C2E71;
+}
+
+#search {
+    width: 85% !important;
+}
+
+.icon-search {
+    margin-top: 18px;
+}
+
+.exposer-color {
+    color: black;
+    font-size: 24px !important;
+    line-height: 10px;
+}
+
+.adn-color {
+    color: #FE9B04;
+    font-size: 24px !important;
+    line-height: 10px;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1 px solid black !important;
+    -webkit-box-shadow: 0 1px 0 0 black !important;
+    box-shadow: 0 1px 0 0 black !important;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid black !important;
+    -webkit-box-shadow: 0 1px 0 0 black !important;
+    box-shadow: 0 1px 0 0 black !important;
+}
+
+.sidenav {
+    width: 45% !important;
+}
+
+.left-all-menu {
+    margin-left: 10%;
+}
+
+.text-menu {
+    margin-left: 5%;
+}
+
+.slider-icon-menu {
+    width: 3%;
+}
+
+.group-action {
+    line-height: 10px !important;
 }

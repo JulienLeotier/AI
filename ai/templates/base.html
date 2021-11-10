@@ -27,6 +27,13 @@
   <!-- Your stuff: Third-party CSS libraries go here -->
   <!-- This file stores project-specific CSS -->
   <link href="{% static 'css/project.css' %}" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: "simssunb" !important;
+      src: url({% static 'fonts/simsunb.ttf' %}) format("ttf"),
+    }
+
+  </style>
   {% endblock %}
   <!-- Le javascript
     ================================================== -->
@@ -52,21 +59,88 @@
 </head>
 
 <body>
-    <nav>
-      <div class="nav-wrapper container">
-         <ul class="left hide-on-med-and-down">
-          <li><a href="sass.html">Menu<i class="material-icons right">search</i></a></li>
-          <li><a href="badges.html">Euro</a></li>
-          <li><a href="collapsible.html">Français</a></li>
-          <li><a href="collapsible.html">Contactez-nous</a></li>
-        </ul>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
+  <nav class="white">
+    <div class="nav-wrapper container-perso">
+      <ul class="left hide-on-med-and-down black-text">
+        <li><a href="#" data-target="slide-out" class="sidenav-trigger black-text">MENU <img
+              src="{% static 'images/Icone_menu_ax@2x.png' %}" class="menu-icon" /></a></li>
+
+        <li><a href="badges.html" class="black-text">EURO
+            <img src="{% static 'images/euro_byu.png' %}" class="menu-icon" /></a>
+        </li>
+        <li><a href="collapsible.html" class="black-text">FRANÇAIS
+            <img src="{% static 'images/Drapeau_.png' %}" class="menu-icon" /></a>
+        </li>
+        <li><a href="collapsible.html" class="black-text">CONTACTEZ-NOUS
+            <img src="{% static 'images/letter_hf@2x.png' %}" class="letter-icon" /></a></li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html" class="black-text"><img src="{% static 'images/gift-card_.png' %}"
+              class="card-icon" /></a></li>
+        <li><a href="sass.html" class="black-text"><img src="{% static 'images/heart_.png' %}" class="heart-icon" /></a>
+        </li>
+        <li><a href="sass.html" class="black-text"><img src="{% static 'images/shopping-bag_1_.png' %}"
+              class="bag-icon" /></a></li>
+        <li><a href="sass.html" class="black-text"><img src="{% static 'images/Mon_Compte@2x.png' %}"
+              class="user-icon" /></a></li>
+
+      </ul>
+    </div>
+  </nav>
+  <ul id="slide-out" class="sidenav">
+    <div class="col s12 text-menu">
+      <p>MENU</p>
+    </div>
+    <div class="row left-all-menu">
+
+      <div class="col s12">
+        <li class="search">
+          <div class="search-wrapper">
+            <input id="search" placeholder="Recherche"><i class="material-icons left icon-search">search</i>
+          </div>
+        </li>
+      </div>
+      <div class="col s12">
+        <h5>ART <b class="shop-color">SHOP</b></h5>
+      </div>
+      <div class="col s12">
+        <ul>
+          <li class="left-menu">Oeuvres</li>
+          <li class="left-menu">Évènements</li>
+          <li class="left-menu">Artistes</li>
+          <li class="left-menu">Multi-Artistes</li>
         </ul>
       </div>
-    </nav>
+      <div class="col s12">
+        <h5 class="culture-color">CULTURE</h5>
+      </div>
+      <div class="col s12">
+        <ul>
+          <li class="left-menu">Arts</li>
+          <li class="left-menu">Chercher un musée ?</li>
+          <li class="left-menu">Agenda des manifestation culturelles</li>
+          <li class="left-menu">ART SHOP découverte de nos artistes</li>
+          <li class="left-menu">Institutions culturelles</li>
+          <li class="left-menu">Job dans la culture</li>
+        </ul>
+      </div>
+      <div class="col s12">
+        <p class="exposer-color"><b>exposer</b></p>
+        <p class="adn-color"><b>adn</b></p>
+      </div>
+      <div class="col s12 group-action">
+        <p><img src="{% static 'images/menu/user.png' %}" class="slider-icon-menu"/> S’inscrire / Se connecter </b></p>
+        <p><img src="{% static 'images/menu/plus_1_b.png' %}" class="slider-icon-menu"/> Mes artistes favoris</b></p>
+        <p><img src="{% static 'images/menu/heart_2_jx@2x.png' %}" class="slider-icon-menu"/> Mes coups de coeur</b></p>
+        <p><img src="{% static 'images/menu/letter_hf@2x.png' %}" class="slider-icon-menu"/> Contactez-nous</b></p>
+        <p><img src="{% static 'images/menu/briefcase_a@2x.png' %}" class="slider-icon-menu"/> Entreprises</b></p>
+        <p><img src="{% static 'images/menu/n_02-globe@2x.png' %}" class="slider-icon-menu"/> FRANÇAIS</b></p>
+        <p><img src="{% static 'images/euro_byu.png' %}" class="slider-icon-menu"/> EUROS</b></p>
+
+      </div>
+
+    </div>
+  </ul>
 
 
   <div class="container">
