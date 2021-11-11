@@ -4,8 +4,13 @@ from django.contrib.auth import get_user_model
 from django.utils.translation import gettext_lazy as _
 
 from ai.users.forms import UserChangeForm, UserCreationForm
+from ai.users.models import Categorie, Musique, Player
 
 User = get_user_model()
+
+admin.site.register(Player)
+admin.site.register(Musique)
+admin.site.register(Categorie)
 
 
 @admin.register(User)

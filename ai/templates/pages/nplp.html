@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="N'oubliez pas les paroles !, Joueur 1, Jou​eur 2">
+  <meta name="description" content="">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  <title>Page 2</title>
+  <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+  <link rel="stylesheet" href="{% static 'css/Page-2.css' %}" media="screen">
+  <script class="u-script" type="text/javascript" src=" {% static 'js/jquery.js' %}" defer=""></script>
+  <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+  <meta name="generator" content="Nicepage 3.29.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400">
+
+  <style>
+    .u-section-1 {
+      background-image: url("{% static 'images/-min.jpg' %}");
+      background-position: 50% 50%;
+    }
+
+    .disabled {
+      pointer-events: none;
+      cursor: default;
+      opacity: 0.6;
+    }
+
+    .u-section-1 .u-image-1 {
+      width: 330px;
+      min-height: 508px;
+      background-image: url("media/{{players.all.0.image}}");
+      margin: -63px auto 0 -65px;
+    }
+
+    .u-section-1 .u-image-2 {
+      width: 334px;
+      min-height: 509px;
+      background-image: url("media/{{players.all.1.image}}");
+      margin: -509px -69px 0 auto;
+    }
+
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      Ò "@type": "Organization",
+      "name": ""
+    }
+
+  </script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="Page 2">
+  <meta property="og:type" content="website">
+</head>
+
+<body class="u-body">
+  <section class="u-clearfix u-image u-section-1" id="sec-f543" data-image-width="1782" data-image-height="1080">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-align-center u-custom-font u-font-lobster u-text u-text-default u-text-white u-text-1">N'oubliez pas
+        les paroles !</h1>
+      {% if categories.all.0.activate %}
+      <a href="/details/{{categories.all.0.id}}/"
+        class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-1"><span
+          class="u-icon"></span>{{categories.all.0.name}}
+      </a>
+      {% else %}
+      <a href="/details/{{categories.all.0.id}}/"
+        class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-1 disabled"><span
+          class="u-icon"></span>{{categories.all.0.name}}
+      </a>
+      {% endif %}
+      <div
+        class="u-align-left u-border-2 u-border-white u-container-style u-group u-image u-radius-28 u-shape-round u-image-1"
+        data-image-width="1500" data-image-height="1000">
+        <div class="u-container-layout u-container-layout-1"></div>
+      </div>
+      <div
+        class="u-align-right u-border-2 u-border-white u-container-style u-group u-image u-radius-28 u-shape-round u-image-2"
+        data-image-width="1500" data-image-height="1000">
+        <div class="u-container-layout u-container-layout-2"></div>
+      </div>
+      {% if categories.all.1.activate %}
+      <a href="/details/{{catagories.all.1.id}}/"
+        class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-2">
+        {{categories.all.1.name}}</a>
+      {% else %}
+      <a href="/details/{{catagories.all.1.id}}/"
+        class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-2">
+        {{categories.all.1.name}}</a>
+      {% endif %}
+      {% if categories.all.2.activate %}
+      <a href="/details/{{catagories.all.2.id}}/"
+        class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-3">
+        {{categories.all.2.name}}</a>
+      {% else %}
+      <a href="/details/{{catagories.all.2.id}}/"
+        class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-3">
+        {{categories.all.2.name}}</a>
+      {% endif %}
+      {% if categories.all.3.activate %}
+      <a href="/details/{{catagories.all.3.id}}/"
+        class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-4">
+        {{categories.all.3.name}}</a>
+      {% else %}
+      <a href="/details/{{catagories.all.3.id}}/"
+        class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-4">
+        {{categories.all.3.name}}</a>
+      {% endif %}
+      {% if categories.all.4.activate %}
+      <a href="/details/{{catagories.all.4.id}}/"
+        class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-5">
+        {{categories.all.4.name}}</a>
+      {% else %}
+      <a href="/details/{{catagories.all.4.id}}/"
+        class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-5">
+        {{categories.all.4.name}}</a>
+      {% endif %}
+      {% if categories.all.4.activate %}
+      <a href="/details/{{catagories.all.0.id}}/"
+        class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-6">
+        {{categories.all.5.name}}</a>
+      {% else %}
+      <a href="/details/{{catagories.all.0.id}}/"
+        class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-6">
+        {{categories.all.5.name}}</a>
+      {% endif %}
+      <a href="/details/{{catagories.all.0.id}}/"
+        class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-7">{{players.all.0.score}}</a>
+      <a href="/details/{{catagories.all.0.id}}/"
+        class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-8">{{players.all.1.score}}</a>
+    </div>
+  </section>
+
+</body>
+
+</html>

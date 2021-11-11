@@ -1,4 +1,5 @@
 from django.contrib.auth.models import AbstractUser
+from django.db import models
 from django.db.models import CharField
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
@@ -20,3 +21,38 @@ class User(AbstractUser):
 
         """
         return reverse("users:detail", kwargs={"username": self.username})
+
+
+class Player(models.Model):
+    name = models.CharField(_("name"), max_length=250)
+    score = models.IntegerField(_("score"), default=0)
+    image = models.ImageField(_("image"), upload_to="static")
+
+    class Meta:
+        verbose_name = _("player")
+        verbose_name_plural = _("players")
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse("_detail", kwargs={"pk": self.pk})
+
+
+class Musique(models.Model):
+    name = models.CharField(_("name"), max_length=250)
+    link = models.URLField()
+    categorie = models.ForeignKey(
+        "Categorie", verbose_name=_("Categories"), on_delete=models.CASCADE
+    )
+
+    def __str__(self):
+        return self.name
+
+
+class Categorie(models.Model):
+    name = models.CharField(_("name"), max_length=250)
+    activate = models.BooleanField(_("activate"), default=True)
+
+    def __str__(self):
+        return self.name
