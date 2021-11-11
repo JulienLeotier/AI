@@ -61,15 +61,15 @@
 <body class="u-body">
   <section class="u-clearfix u-image u-section-1" id="sec-f543" data-image-width="1782" data-image-height="1080">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <h1 class="u-align-center u-custom-font u-font-lobster u-text u-text-default u-text-white u-text-1">N'oubliez pas
-        les paroles !</h1>
+      <h1 class="u-align-center u-custom-font u-font-lobster u-text u-text-default u-text-white u-text-1"><a href="/reset/">N'oubliez pas
+        les paroles !</a></h1>
       {% if categories.all.0.activate %}
       <a href="/details/{{categories.all.0.id}}/"
         class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-1"><span
           class="u-icon"></span>{{categories.all.0.name}}
       </a>
       {% else %}
-      <a href="/details/{{categories.all.0.id}}/"
+      <a href="#"
         class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-1 disabled"><span
           class="u-icon"></span>{{categories.all.0.name}}
       </a>
@@ -85,53 +85,53 @@
         <div class="u-container-layout u-container-layout-2"></div>
       </div>
       {% if categories.all.1.activate %}
-      <a href="/details/{{catagories.all.1.id}}/"
+      <a href="/details/{{categories.all.1.id}}/"
         class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-2">
         {{categories.all.1.name}}</a>
       {% else %}
-      <a href="/details/{{catagories.all.1.id}}/"
+      <a href="#"
         class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-2">
         {{categories.all.1.name}}</a>
       {% endif %}
       {% if categories.all.2.activate %}
-      <a href="/details/{{catagories.all.2.id}}/"
+      <a href="/details/{{categories.all.2.id}}/"
         class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-3">
         {{categories.all.2.name}}</a>
       {% else %}
-      <a href="/details/{{catagories.all.2.id}}/"
+      <a href="#"
         class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-3">
         {{categories.all.2.name}}</a>
       {% endif %}
       {% if categories.all.3.activate %}
-      <a href="/details/{{catagories.all.3.id}}/"
+      <a href="/details/{{categories.all.3.id}}/"
         class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-4">
         {{categories.all.3.name}}</a>
       {% else %}
-      <a href="/details/{{catagories.all.3.id}}/"
+      <a href="#"
         class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-4">
         {{categories.all.3.name}}</a>
       {% endif %}
       {% if categories.all.4.activate %}
-      <a href="/details/{{catagories.all.4.id}}/"
+      <a href="/details/{{categories.all.4.id}}/"
         class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-5">
         {{categories.all.4.name}}</a>
       {% else %}
-      <a href="/details/{{catagories.all.4.id}}/"
+      <a href="#"
         class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-5">
         {{categories.all.4.name}}</a>
       {% endif %}
-      {% if categories.all.4.activate %}
-      <a href="/details/{{catagories.all.0.id}}/"
+      {% if categories.all.5.activate %}
+      <a href="/details/{{categories.all.5.id}}/"
         class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-6">
         {{categories.all.5.name}}</a>
       {% else %}
-      <a href="/details/{{catagories.all.0.id}}/"
+      <a href="#"
         class="disabled u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-6">
         {{categories.all.5.name}}</a>
       {% endif %}
-      <a href="/details/{{catagories.all.0.id}}/"
+      <a href="/score/{{players.all.0.id}}/{{players.all.0.score}}/"
         class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-7">{{players.all.0.score}}</a>
-      <a href="/details/{{catagories.all.0.id}}/"
+      <a href="/score/{{players.all.1.id}}/{{players.all.1.score}}/"
         class="u-align-center u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-color-3 u-hover-palette-1-dark-2 u-radius-23 u-btn-8">{{players.all.1.score}}</a>
     </div>
   </section>

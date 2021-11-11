@@ -1,7 +1,9 @@
+from random import randint
+
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import DetailView, RedirectView, UpdateView
@@ -54,15 +56,46 @@ class PlayerView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["players"] = Player.objects.all()[:2]
-        context["categories"] = Categorie.objects.all()
+        context["players"] = Player.objects.all().order_by("id")
+        context["categories"] = Categorie.objects.filter(play=True).order_by("id")
         return context
 
 
 def CategorieView(request, pk):
-    musique = Musique.objects.filter(categorie=Categorie.objects.get(id=pk))
+    Categorie.objects.filter(id=pk).update(activate=False)
+    allMusique = Musique.objects.filter(categorie=Categorie.objects.get(id=pk))
+    item_count = allMusique.count()
+    if item_count:
+        firstRandomNumber = randint(1, item_count - 1)
+        secondRandomNumber = randint(1, item_count - 1)
+        check = True
+        while check:
+            if firstRandomNumber == secondRandomNumber:
+                firstRandomNumber = randint(1, item_count - 1)
+                secondRandomNumber = randint(1, item_count - 1)
+            else:
+                check = False
+        random_musique = [allMusique[firstRandomNumber], allMusique[secondRandomNumber]]
+    else:
+        random_musique = Musique.objects.filter(categorie=Categorie.objects.get(id=pk))
     context = {
-        "musique": musique,
+        "musique": random_musique,
     }
 
     return render(request, "pages/details.html", context)
+
+
+def CategoriesActiveView(request):
+    cats = Categorie.objects.all()
+    for cat in cats:
+        Categorie.objects.filter(id=cat.id).update(activate=True)
+    plays = Player.objects.all()
+    for play in plays:
+        Player.objects.filter(id=play.id).update(score=0)
+    return redirect("/")
+
+
+def ScoreView(request, pk, score):
+    player = Player.objects.filter(id=pk)
+    player.update(score=score + 10)
+    return redirect("/")

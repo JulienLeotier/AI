@@ -5,7 +5,7 @@ from django.urls import include, path
 from django.views import defaults as default_views
 from django.views.generic import TemplateView
 
-from ai.users.views import CategorieView, PlayerView
+from ai.users.views import CategoriesActiveView, CategorieView, PlayerView, ScoreView
 
 urlpatterns = [
     path("index", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -14,6 +14,8 @@ urlpatterns = [
     ),
     path("", PlayerView.as_view(), name="home"),
     path("details/<int:pk>/", CategorieView, name="details"),
+    path("reset/", CategoriesActiveView, name="reset"),
+    path("score/<int:pk>/<int:score>/", ScoreView, name="score"),
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
     # User management

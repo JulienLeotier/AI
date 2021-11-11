@@ -53,6 +53,14 @@ class Musique(models.Model):
 class Categorie(models.Model):
     name = models.CharField(_("name"), max_length=250)
     activate = models.BooleanField(_("activate"), default=True)
+    play = models.BooleanField(_("play"), default=False)
 
     def __str__(self):
         return self.name
+
+
+class MyCategories(models.Model):
+    categories = models.ManyToManyField(to=Categorie)
+
+    def __str__(self) -> str:
+        return "MyCatégories"
